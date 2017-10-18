@@ -20,6 +20,7 @@ Before you kick off you'll need to make sure you have a few things:
 3. A Travis CI account
 4. [Lando installed](https://docs.devwithlando.io/installation/installing.html)
 5. [Git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)*
+6. (Optional) [ZenHub](https://www.zenhub.com/) for Kanban style issue management in GitHub
 
 It is also definitely worth reading about the upstream [starter kit](https://github.com/platformsh/platformsh-example-drupal8) and accompanying [documentation](https://docs.platform.sh/gettingstarted/local/lando.html) on using Lando with [Platform.sh](http://platform.sh).
 
