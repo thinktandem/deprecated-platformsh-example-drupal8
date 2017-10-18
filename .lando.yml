@@ -1,5 +1,5 @@
 # Change this name to something that makes sense for your project
-name: infiniteawesome
+name: dangerzone
 
 # Use the recipe appropriate for your application.
 recipe: drupal8
@@ -58,5 +58,5 @@ tooling:
   behat:
     service: appserver
     cmd: /app/vendor/bin/behat
-  # git:
-  #   service: appserver
+#  git:
+#    service: appserver
