@@ -42,9 +42,9 @@ script:
 
   # Generate and post an ssh key and then wait because Platform seems to
   # refresh keys every 90 seconds
-  # @todo: Is the below sleep reliable?
+  # NOTE: If you are getting consistent DB pull failures then you might want to increase the sleep
   - lando platform ssh-key:add -y
-  - sleep 120
+  - sleep 200
 
   # Dump and import the database
   - lando platform db:dump --gzip --file=dump.sql.gz --project=$PLATFORMSH_PROJECT_ID --environment=master --identity-file=/var/www/.ssh/id_rsa

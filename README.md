@@ -145,6 +145,8 @@ Trying Things Out
 
 Let's go through a [GitHub flow](https://guides.github.com/introduction/flow/) example!
 
+This is a trivial example which deploys all merges into the `master` branch to the production environment. You can configure more complicated workflows (eg a `dev` and/or `test` environment) when you spin up your Platform.sh site but we think this configuration helps maximize continuous delivery.
+
 ### 1. Set up a topic branch
 
 ```bash
@@ -166,7 +168,7 @@ git checkout -b 1-fixes-that-thing
 
 # Git commit with a message that matches the issue number
 git add -A
-git commit -m "#1: Describes that i did"
+git commit -m "#1: Describes what i did"
 
 # Push the branch to GitHub
 git push origin 1-fixes-that-thing
@@ -180,9 +182,114 @@ Begin by [opening a pull request](https://help.github.com/articles/creating-a-pu
 
 Here is an example PR with:
 
-*
+* [PR on GitHub](https://github.com/thinktandem/platformsh-example-drupal8/pull/2)
+* [QA Environment on Platform.sh](http://pr-2-tcs3n7y-2a6htdqmmpchu.us.platform.sh/)
+* [Travis PR Build](https://travis-ci.org/thinktandem/platformsh-example-drupal8/builds/289355899?utm_source=github_status&utm_medium=notification)
 
+### 4. Deploy
 
+When you are statisifed with the above, and any additional QA steps like manual code review you can [merge the pull request](https://help.github.com/articles/merging-a-pull-request/). This will deploy the feature to production.
 
 Lando Reference
 ---------------
+
+You should definitely check out the [Lando docs](https://docs.devwithlando.io) for a full sweep on its capabilities but here are some helpers for this particular config. **YOU PROBABLY WANT TO LANDO START YOUR APP BEFORE YOU DO MOST OF THESE THINGS.**
+
+Unless otherwise indicated these should all be run from your repo root (eg the directory that contains the `.lando.yml` for your site).
+
+### Generic Ccommands
+
+```bash
+# List all available lando commands for this app
+lando
+
+# Start my site
+lando start
+
+# Stop my site
+lando stop
+
+# Restart my site
+lando restart
+
+# Get important connection info
+lando info
+
+# Other helpful things
+# Rebuild all containers and build process steps
+lando rebuild
+# Destroy the containers and tools for this app
+lando destroy
+# Get info on lando service logs
+lando logs
+# Get a publically accessible URL. Run lando info to get the proper localhost address
+lando share -u http://localhost:32813
+# "SSH" into the appserver
+lando ssh
+
+# Run help to get more info
+lando ssh -- --help
+```
+
+### Development commands
+
+```bash
+# Run composer things
+lando composer install
+lando composer update
+
+# Run php things
+lando php -v
+lando php -i
+
+# Run drush commands
+# replace web if you've moved your webroot to a difference subdirectory
+cd web
+lando drush status
+lando drush cr
+
+# Run drupal console commands
+# replace web if you've moved your webroot to a difference subdirectory
+cd web
+lando drupal
+```
+
+### Testing commands
+
+```bash
+# Lint code
+lando phplint
+
+# Run phpcs commands
+lando phpcs
+# Check drupal code standards
+lando phpcs --config-set installed_paths /app/vendor/drupal/coder/coder_sniffer
+lando phpcs -n --report=full --standard=Drupal --ignore=*.tpl.php --extensions=install,module,php,inc web/modules web/themes web/profiles
+
+# Run phpunit commands
+# replace web if you've moved your webroot to a difference subdirectory
+cd web
+lando phpunit
+# Run some phpunit tests
+lando phpunit -c core --testsuite unit --exclude-group Composer
+
+# Run behat commands
+lando behat
+# Run some behat tests
+lando behat --config=/app/tests/behat-lando.yml
+```
+
+### Platform.sh commands
+
+```bash
+# List platform commands
+lando platform list
+
+# Login to platform
+lando platform login
+
+# Import a database from master
+lando platform db:dump --gzip --file=dump.sql.gz --project=PROJECT_ID --environment=master
+lando db-import dump.sql.gz
+rm -f dump.sql.gz
+```
