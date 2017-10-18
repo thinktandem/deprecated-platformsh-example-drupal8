@@ -20,6 +20,6 @@ if (isset($_SERVER['LANDO'])) {
   ];
 
   // And a bogus hashsalt for now
-  $settings['hash_salt'] = json_encode($database);
+  $settings['hash_salt'] = json_encode($databases);
 
 }
