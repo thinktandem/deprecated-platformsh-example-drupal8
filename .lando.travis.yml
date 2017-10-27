@@ -30,6 +30,8 @@ services:
     overrides:
       services:
         environment:
+          PLATFORMSH_CLI_TOKEN: $PLATFORMSH_CLI_TOKEN
+          PLATFORMSH_PROJECT_ID: $PLATFORMSH_PROJECT_ID
           BEHAT_PARAMS: '{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "http://nginx/"}, "Drupal\\DrupalExtension" : {"drush" :   {  "root":  "/app/web" }}}}'
 
 # Ensure `composer install` also happens every time you start your site
