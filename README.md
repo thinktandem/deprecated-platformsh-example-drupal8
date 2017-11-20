@@ -1,6 +1,6 @@
 Killer Drupal 8 Workflow for Platform.sh
 ========================================
- 
+
 This project is meant to be forked and used as an easy-to-get-going start state for an awesome dev workflow that includes:
 
 1. Canonical upstream repo on [GitHub](http://github.com)
