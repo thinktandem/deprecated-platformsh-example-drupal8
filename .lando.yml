@@ -1,5 +1,5 @@
 # Change this name to something that makes sense for your project
-name: infiniteawesome
+name: subrads
 
 # Use the recipe appropriate for your application.
 recipe: drupal8
@@ -44,6 +44,8 @@ tooling:
     service: appserver
     description: Run Platform CLI commands
     cmd: /var/www/.platformsh/bin/platform
+    options:
+      passthrough: true
   phplint:
     service: appserver
     cmd: /app/vendor/bin/phplint
