@@ -1,0 +1,14 @@
+uuid: dcded44b-340e-4210-8e42-84d85f1c9b7d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - devkodama@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
