@@ -20,7 +20,7 @@ web/sites/*/settings.local.php
 
 # Ignore archives
 *.sql
-*.gz
+# *.gz
 *.tar
 *.zip
 
