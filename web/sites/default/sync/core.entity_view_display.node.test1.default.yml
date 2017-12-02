@@ -1,0 +1,26 @@
+uuid: cbcd23a9-3a9d-431a-9eff-657389be888f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test1.body
+    - node.type.test1
+  module:
+    - text
+    - user
+id: node.test1.default
+targetEntityType: node
+bundle: test1
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
