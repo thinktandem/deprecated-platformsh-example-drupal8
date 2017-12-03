@@ -1,0 +1,11 @@
+extlink_include: ''
+extlink_exclude: ''
+extlink_alert_text: ''
+extlink_alert: false
+extlink_target: true
+extlink_subdomains: false
+extlink_mailto_class: mailto
+extlink_img_class: true
+extlink_class: ext
+extlink_css_exclude: ''
+extlink_css_explicit: ''
