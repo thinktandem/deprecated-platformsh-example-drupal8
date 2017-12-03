@@ -1,0 +1,23 @@
+uuid: 7c0f1468-0b28-4a94-bb65-8a60ab077fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.bp_columns_two_uneven
+  module:
+    - options
+_core:
+  default_config_hash: WSuFplUsueit2u_WftaFOfNTOP11QR9AN3fa94u-eyk
+id: paragraph.bp_columns_two_uneven.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: bp_columns_two_uneven
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

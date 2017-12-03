@@ -1,0 +1,23 @@
+uuid: 889ade46-3812-4100-9b6e-d713b3ac8528
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 9-AGsUpVc91U18YqMJgLO5hqyzyJ41T7dPIrp_PJOEo
+id: paragraph.bp_modal_button_text
+field_name: bp_modal_button_text
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

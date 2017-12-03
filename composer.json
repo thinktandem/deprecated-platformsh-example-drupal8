@@ -38,7 +38,14 @@
         "drupal/draggableviews": "^1.0",
         "drupal/views_bootstrap": "^3.0",
         "drupal/admin_toolbar": "^1.21",
-        "drupal/adminimal_admin_toolbar": "^1.5"
+        "drupal/adminimal_admin_toolbar": "^1.5",
+        "drupal/paragraphs": "^1.2",
+        "drupal/bootstrap_paragraphs": "^2.0@beta",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/allowed_formats": "^1.1",
+        "drupal/permissions_by_term": "^1.39",
+        "drupal/subpathauto": "^1.0@beta",
+        "drupal/search_api": "^1.5"
     },
     "require-dev": {
         "behat/behat": "3.*",

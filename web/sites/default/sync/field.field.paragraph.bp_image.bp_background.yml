@@ -1,0 +1,23 @@
+uuid: 6c594c4f-3f70-443d-82de-26d93e6997df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.bp_image
+  module:
+    - options
+_core:
+  default_config_hash: C1Lv-Plm2CKYx387_tTcbsWUA0szHReWTd8ru0Z_EbE
+id: paragraph.bp_image.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: bp_image
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

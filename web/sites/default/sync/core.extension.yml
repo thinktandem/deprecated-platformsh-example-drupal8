@@ -2,6 +2,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
+  allowed_formats: 0
   auto_entitylabel: 0
   automated_cron: 0
   backup_migrate: 0
@@ -9,6 +10,7 @@ module:
   block: 0
   block_content: 0
   bootstrap_layouts: 0
+  bootstrap_paragraphs: 0
   breakpoint: 0
   ckeditor: 0
   color: 0
@@ -25,6 +27,7 @@ module:
   draggableviews: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_permissions: 0
   field_ui: 0
@@ -41,9 +44,14 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  page_manager: 0
+  page_manager_ui: 0
   panels: 0
   panels_ipe: 0
+  paragraphs_type_permissions: 0
   path: 0
+  permissions_by_entity: 0
+  permissions_by_term: 0
   plupload: 0
   plupload_widget: 0
   prlp: 0
@@ -52,8 +60,13 @@ module:
   responsive_image: 0
   rest: 0
   search: 0
+  search_api: 0
+  search_api_db: 0
+  search_api_db_defaults: 0
+  search_api_views_taxonomy: 0
   serialization: 0
   shortcut: 0
+  subpathauto: 0
   system: 0
   taxonomy: 0
   telephone: 0
@@ -65,10 +78,12 @@ module:
   user: 0
   views_bootstrap: 0
   views_ui: 0
+  viewsreference: 0
   extlink: 1
   menu_link_content: 1
   pathauto: 1
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   stable: 0

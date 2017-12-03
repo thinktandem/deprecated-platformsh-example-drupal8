@@ -1,0 +1,23 @@
+uuid: f3490d31-dc5c-4414-83d7-43a5d274334f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.bp_columns
+  module:
+    - options
+_core:
+  default_config_hash: UdbROtn78kIu1xRj1VNXb-ga_GOZTieFdplabywZBcg
+id: paragraph.bp_columns.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: bp_columns
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
