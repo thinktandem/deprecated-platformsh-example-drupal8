@@ -8,7 +8,13 @@ dependencies:
     - field.field.paragraph.bp_columns.bp_width
     - paragraphs.paragraphs_type.bp_columns
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 0KoEp7uHdq6dO4VLrkaeVOfmDCsIYuhWIW5PaSrVBrs
 id: paragraph.bp_columns.default

@@ -6,7 +6,13 @@ dependencies:
     - field.field.paragraph.bp_column_wrapper.bp_column_content_w
     - paragraphs.paragraphs_type.bp_column_wrapper
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: wK-BPkwFH8QxQfRE09q4U3USipjad-jYZ3npZF69F5w
 id: paragraph.bp_column_wrapper.default

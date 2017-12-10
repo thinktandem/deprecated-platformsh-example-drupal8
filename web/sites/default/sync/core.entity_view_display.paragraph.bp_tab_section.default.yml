@@ -8,6 +8,12 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tab_section
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: TlFskaEqW2OHWt2AXRAf6M-yhkwsJ7CfWd3HqVQKYEM
 id: paragraph.bp_tab_section.default

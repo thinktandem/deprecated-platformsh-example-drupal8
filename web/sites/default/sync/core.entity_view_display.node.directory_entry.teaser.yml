@@ -1,0 +1,38 @@
+uuid: 4472b665-d0a4-4d3d-ae4c-08289c0b454b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.directory_entry.field_access
+    - field.field.node.directory_entry.field_dir_department
+    - field.field.node.directory_entry.field_dir_extension
+    - field.field.node.directory_entry.field_dir_name
+    - field.field.node.directory_entry.field_dir_note
+    - field.field.node.directory_entry.field_dir_number
+    - field.field.node.directory_entry.field_facility
+    - node.type.directory_entry
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.directory_entry.teaser
+targetEntityType: node
+bundle: directory_entry
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_access: true
+  field_dir_department: true
+  field_dir_extension: true
+  field_dir_name: true
+  field_dir_note: true
+  field_dir_number: true
+  field_facility: true

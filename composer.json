@@ -45,7 +45,8 @@
         "drupal/allowed_formats": "^1.1",
         "drupal/permissions_by_term": "^1.39",
         "drupal/subpathauto": "^1.0@beta",
-        "drupal/search_api": "^1.5"
+        "drupal/search_api": "^1.5",
+        "drupal/conditional_fields": "^1.0@alpha"
     },
     "require-dev": {
         "behat/behat": "3.*",

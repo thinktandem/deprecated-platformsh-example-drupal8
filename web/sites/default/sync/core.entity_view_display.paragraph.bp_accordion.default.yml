@@ -9,7 +9,13 @@ dependencies:
     - paragraphs.paragraphs_type.bp_accordion
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
     - options
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: rpf9oQ5Et9gNdK5Tw2d_Arpme6-F5Sto4_xd0dQMxoQ
 id: paragraph.bp_accordion.default

@@ -1,0 +1,19 @@
+uuid: cc742373-46a1-4cfc-84e2-1a8dcb75709a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dir_note
+    - node.type.directory_entry
+id: node.directory_entry.field_dir_note
+field_name: field_dir_note
+entity_type: node
+bundle: directory_entry
+label: Note
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

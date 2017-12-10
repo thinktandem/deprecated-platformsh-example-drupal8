@@ -1,0 +1,50 @@
+uuid: 9a588c1f-cffe-4c9c-a822-d1acb4f9bfe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page.field_access
+    - field.field.node.basic_page.field_basic_page_body
+    - field.field.node.basic_page.field_basic_page_files
+    - node.type.basic_page
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.basic_page.default
+targetEntityType: node
+bundle: basic_page
+mode: default
+content:
+  field_access:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_basic_page_body:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_basic_page_files:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

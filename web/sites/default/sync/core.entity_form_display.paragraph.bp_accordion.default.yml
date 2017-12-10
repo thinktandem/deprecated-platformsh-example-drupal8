@@ -8,7 +8,13 @@ dependencies:
     - field.field.paragraph.bp_accordion.bp_width
     - paragraphs.paragraphs_type.bp_accordion
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: zSy0KOISVHBDX_J9egB1NORxWuoONNkl0VVkccnFfBU
 id: paragraph.bp_accordion.default

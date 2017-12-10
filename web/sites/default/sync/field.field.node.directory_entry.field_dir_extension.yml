@@ -1,0 +1,19 @@
+uuid: 50ad826e-0aed-4bf3-b574-8f708deb057b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dir_extension
+    - node.type.directory_entry
+id: node.directory_entry.field_dir_extension
+field_name: field_dir_extension
+entity_type: node
+bundle: directory_entry
+label: Extension
+description: 'Last four digits of the number. The area code/prefix will be assigned from the selected facility.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

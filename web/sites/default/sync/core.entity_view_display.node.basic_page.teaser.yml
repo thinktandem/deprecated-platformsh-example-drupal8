@@ -1,0 +1,30 @@
+uuid: fe37c2d9-d72c-4231-9029-39697459ee77
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.basic_page.field_access
+    - field.field.node.basic_page.field_basic_page_body
+    - field.field.node.basic_page.field_basic_page_files
+    - node.type.basic_page
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.basic_page.teaser
+targetEntityType: node
+bundle: basic_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_access: true
+  field_basic_page_body: true
+  field_basic_page_files: true

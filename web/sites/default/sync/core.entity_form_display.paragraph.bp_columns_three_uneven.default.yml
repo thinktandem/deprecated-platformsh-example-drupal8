@@ -9,7 +9,13 @@ dependencies:
     - field.field.paragraph.bp_columns_three_uneven.bp_width
     - paragraphs.paragraphs_type.bp_columns_three_uneven
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: FhwuozScv-Q1EloGIz7kz1hrG5A53Bv7L8vfLkcnJkw
 id: paragraph.bp_columns_three_uneven.default

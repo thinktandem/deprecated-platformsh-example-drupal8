@@ -8,6 +8,12 @@ dependencies:
     - paragraphs.paragraphs_type.bp_accordion_section
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: Tcvoq8JoLk1ugiV-ek8wWHtJqn051u_S68Kfz2ogClI
 id: paragraph.bp_accordion_section.default

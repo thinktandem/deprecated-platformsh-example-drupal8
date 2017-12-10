@@ -1,0 +1,27 @@
+uuid: 6df542dd-f92b-4d6e-90bc-1407b45589ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basic_page_files
+    - node.type.basic_page
+  module:
+    - file
+id: node.basic_page.field_basic_page_files
+field_name: field_basic_page_files
+entity_type: node
+bundle: basic_page
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: basic
+  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx png jpg jpeg gif'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

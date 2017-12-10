@@ -1,0 +1,17 @@
+uuid: 7f290dc2-10f7-488a-9ab7-0b199f6844d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Directory Entry'
+type: directory_entry
+description: 'Directory entry'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

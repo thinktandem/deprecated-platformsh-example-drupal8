@@ -9,9 +9,15 @@ dependencies:
     - field.field.paragraph.bp_image.bp_width
     - paragraphs.paragraphs_type.bp_image
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
     - options
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: f1qcyZTh1nWCN2Sk7I1xwTOhucQDBgnWOUBoF3T94Xk
 id: paragraph.bp_image.default

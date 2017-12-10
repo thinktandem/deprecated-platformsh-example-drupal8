@@ -7,7 +7,13 @@ dependencies:
     - field.field.paragraph.bp_tab_section.bp_tab_section_title
     - paragraphs.paragraphs_type.bp_tab_section
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: yvnAACcaIIRPeeS7YVtS-Z8Pbuatcftmox25-8I5Llw
 id: paragraph.bp_tab_section.default

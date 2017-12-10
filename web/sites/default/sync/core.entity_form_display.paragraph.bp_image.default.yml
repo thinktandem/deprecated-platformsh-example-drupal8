@@ -10,8 +10,14 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.bp_image
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: HdN79DCCkrP_BBFmnXk4bHUxNg16EtuZC7olW5xr2wE
 id: paragraph.bp_image.default

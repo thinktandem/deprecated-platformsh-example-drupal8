@@ -9,7 +9,13 @@ dependencies:
     - field.field.paragraph.bp_carousel.bp_width
     - paragraphs.paragraphs_type.bp_carousel
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: VM2-v4lCqhNA7pfcql-iEyt7O9WwxXkSgTd8cvTR51o
 id: paragraph.bp_carousel.default

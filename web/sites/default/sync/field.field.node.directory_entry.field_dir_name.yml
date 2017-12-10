@@ -1,0 +1,19 @@
+uuid: f61dc6c4-1632-41fb-96a0-0f09cf72d63a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dir_name
+    - node.type.directory_entry
+id: node.directory_entry.field_dir_name
+field_name: field_dir_name
+entity_type: node
+bundle: directory_entry
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

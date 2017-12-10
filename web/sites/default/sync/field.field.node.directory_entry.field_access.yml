@@ -1,0 +1,33 @@
+uuid: a3d73258-2365-4be6-a271-e3c0b3bc67ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_access
+    - node.type.directory_entry
+    - taxonomy.vocabulary.access
+  content:
+    - 'taxonomy_term:access:bdb56955-9083-4174-baab-f4917c426e05'
+id: node.directory_entry.field_access
+field_name: field_access
+entity_type: node
+bundle: directory_entry
+label: Access
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: bdb56955-9083-4174-baab-f4917c426e05
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      access: access
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

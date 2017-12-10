@@ -1,0 +1,21 @@
+uuid: 726d2176-480c-49c2-ab35-d6daf213ad26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dir_number
+    - node.type.directory_entry
+  module:
+    - telephone
+id: node.directory_entry.field_dir_number
+field_name: field_dir_number
+entity_type: node
+bundle: directory_entry
+label: 'Full Number'
+description: 'If the area code/prefix are different from the facility selected, enter the full number (xxx) xxx-xxxx here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

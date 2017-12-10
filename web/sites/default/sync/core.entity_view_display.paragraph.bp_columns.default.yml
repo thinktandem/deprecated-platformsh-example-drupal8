@@ -9,7 +9,13 @@ dependencies:
     - paragraphs.paragraphs_type.bp_columns
   module:
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
     - options
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: wIDWPSouhITkH6QV8vXzWJ-cbN-dEYeBvMGBS0jV4x0
 id: paragraph.bp_columns.default
