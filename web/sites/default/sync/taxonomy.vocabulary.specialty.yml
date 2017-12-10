@@ -1,0 +1,9 @@
+uuid: d54167fd-33e6-460d-aa81-cd1a63329bd6
+langcode: en
+status: true
+dependencies: {  }
+name: Specialty
+vid: specialty
+description: 'Radiology subspecialty'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,14 @@
+uuid: 6973cf8c-1772-4ccb-b2af-687f607fc194
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nm_modality_director
+  module:
+    - user
+id: user_remove_role_action.nm_modality_director
+label: 'Remove the NM Modality Director role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: nm_modality_director

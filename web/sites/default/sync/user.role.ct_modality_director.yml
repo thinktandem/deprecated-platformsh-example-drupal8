@@ -1,0 +1,9 @@
+uuid: e69919a2-9b6f-4c78-b271-bb76d071dc8d
+langcode: en
+status: true
+dependencies: {  }
+id: ct_modality_director
+label: 'CT Modality Director'
+weight: -3
+is_admin: null
+permissions: {  }

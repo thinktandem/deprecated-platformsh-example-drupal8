@@ -1,0 +1,14 @@
+uuid: 69f71e18-f750-400d-b176-576c08f00942
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.xr_modality_director
+  module:
+    - user
+id: user_remove_role_action.xr_modality_director
+label: 'Remove the XR Modality Director role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: xr_modality_director

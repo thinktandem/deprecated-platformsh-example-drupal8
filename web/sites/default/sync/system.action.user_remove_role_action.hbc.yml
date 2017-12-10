@@ -1,0 +1,14 @@
+uuid: 106e44a7-a7f6-47e2-991a-cb0acc19d090
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hbc
+  module:
+    - user
+id: user_remove_role_action.hbc
+label: 'Remove the HBC role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hbc

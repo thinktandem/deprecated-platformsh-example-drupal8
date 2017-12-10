@@ -1,0 +1,21 @@
+uuid: 029a8903-6fb8-43aa-8d3b-531b11fa1599
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_d
+    - taxonomy.vocabulary.facility
+  module:
+    - options
+id: taxonomy_term.facility.field_d
+field_name: field_d
+entity_type: taxonomy_term
+bundle: facility
+label: 'Directory Group'
+description: 'Category for grouping in directory listings'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

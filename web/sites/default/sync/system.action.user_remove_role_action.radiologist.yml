@@ -1,0 +1,14 @@
+uuid: dd977632-0dc0-492c-a68c-1421e08c8922
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.radiologist
+  module:
+    - user
+id: user_remove_role_action.radiologist
+label: 'Remove the Radiologist role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: radiologist

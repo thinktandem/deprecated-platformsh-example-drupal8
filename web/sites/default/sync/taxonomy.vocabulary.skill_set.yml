@@ -1,0 +1,9 @@
+uuid: 6ac32cf5-fc53-4434-a380-db59cc52757f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Skill Set'
+vid: skill_set
+description: 'Radiologist skill set'
+hierarchy: 0
+weight: 0

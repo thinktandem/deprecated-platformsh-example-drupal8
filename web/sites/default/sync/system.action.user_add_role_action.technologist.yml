@@ -1,0 +1,14 @@
+uuid: 0aa4cd6c-1620-4a75-a5e1-23a098ef788c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.technologist
+  module:
+    - user
+id: user_add_role_action.technologist
+label: 'Add the Technologist role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: technologist

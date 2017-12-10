@@ -1,0 +1,14 @@
+uuid: 466ca691-456e-411b-bf2b-447125126087
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mr
+  module:
+    - user
+id: user_add_role_action.mr
+label: 'Add the MR Modality Director role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mr

@@ -1,0 +1,23 @@
+uuid: 457488cb-bf2e-4187-962c-fe1cd27f9e4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_website
+    - taxonomy.vocabulary.facility
+  module:
+    - link
+id: taxonomy_term.facility.field_website
+field_name: field_website
+entity_type: taxonomy_term
+bundle: facility
+label: Website
+description: 'Web address'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

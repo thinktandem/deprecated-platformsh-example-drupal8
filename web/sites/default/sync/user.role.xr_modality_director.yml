@@ -1,0 +1,9 @@
+uuid: f18639bb-8051-4e25-b931-15289035aef4
+langcode: en
+status: true
+dependencies: {  }
+id: xr_modality_director
+label: 'XR Modality Director'
+weight: 2
+is_admin: null
+permissions: {  }

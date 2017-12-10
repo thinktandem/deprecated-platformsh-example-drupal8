@@ -1,0 +1,14 @@
+uuid: f69cca53-66f7-45b7-a13e-94abd38a1e8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mr
+  module:
+    - user
+id: user_remove_role_action.mr
+label: 'Remove the MR Modality Director role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mr

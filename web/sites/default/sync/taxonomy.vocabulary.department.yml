@@ -1,0 +1,9 @@
+uuid: abead497-bbf2-491a-a651-a545b588ddda
+langcode: en
+status: true
+dependencies: {  }
+name: Department
+vid: department
+description: Department
+hierarchy: 0
+weight: 0

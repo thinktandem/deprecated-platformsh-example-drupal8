@@ -1,0 +1,9 @@
+uuid: b4d73f60-3119-48d5-a74f-fdcff1d089b6
+langcode: en
+status: true
+dependencies: {  }
+id: mr
+label: 'MR Modality Director'
+weight: -1
+is_admin: null
+permissions: {  }

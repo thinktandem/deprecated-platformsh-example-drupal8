@@ -1,0 +1,135 @@
+uuid: daa364f5-f912-4db1-afab-0db4139d0809
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.facility.field_area_code
+    - field.field.taxonomy_term.facility.field_city
+    - field.field.taxonomy_term.facility.field_d
+    - field.field.taxonomy_term.facility.field_main_ext
+    - field.field.taxonomy_term.facility.field_map_query
+    - field.field.taxonomy_term.facility.field_prefix
+    - field.field.taxonomy_term.facility.field_state
+    - field.field.taxonomy_term.facility.field_street_address
+    - field.field.taxonomy_term.facility.field_street_address_2
+    - field.field.taxonomy_term.facility.field_website
+    - field.field.taxonomy_term.facility.field_zip
+    - taxonomy.vocabulary.facility
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.facility.default
+targetEntityType: taxonomy_term
+bundle: facility
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_area_code:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_city:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_d:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_main_ext:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_map_query:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_prefix:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_state:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_street_address:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_street_address_2:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_website:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_zip:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

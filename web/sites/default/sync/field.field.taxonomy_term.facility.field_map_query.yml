@@ -1,0 +1,19 @@
+uuid: be16d8f6-35ce-458c-be76-58a8355f6e28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_map_query
+    - taxonomy.vocabulary.facility
+id: taxonomy_term.facility.field_map_query
+field_name: field_map_query
+entity_type: taxonomy_term
+bundle: facility
+label: 'Map query'
+description: 'Search string (e.g. "Adventist La Grange Memorial Hospital") which will be passed to Google or Apple maps'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

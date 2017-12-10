@@ -1,0 +1,14 @@
+uuid: 65522da3-76a0-4d7d-9fdc-df084341438d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ct_modality_director
+  module:
+    - user
+id: user_remove_role_action.ct_modality_director
+label: 'Remove the CT Modality Director role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ct_modality_director

@@ -1,0 +1,14 @@
+uuid: d226388c-45b9-4be0-8f11-4eca806fd249
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ma_modality_director
+  module:
+    - user
+id: user_add_role_action.ma_modality_director
+label: 'Add the MA Modality Director role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ma_modality_director

@@ -1,0 +1,14 @@
+uuid: 8e3c1885-fec4-4e06-b436-28bf92a6ef8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.us_modality_director
+  module:
+    - user
+id: user_add_role_action.us_modality_director
+label: 'Add the US Modality Director role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: us_modality_director

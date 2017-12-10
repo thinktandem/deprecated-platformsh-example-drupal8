@@ -1,0 +1,9 @@
+uuid: 09aad57f-37a0-49c6-a989-dff90fca23aa
+langcode: en
+status: true
+dependencies: {  }
+id: technologist
+label: Technologist
+weight: -5
+is_admin: null
+permissions: {  }

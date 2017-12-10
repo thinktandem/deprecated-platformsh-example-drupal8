@@ -1,0 +1,14 @@
+uuid: a2b843a2-ae4b-49ff-90ca-228bee5a2328
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.xr_modality_director
+  module:
+    - user
+id: user_add_role_action.xr_modality_director
+label: 'Add the XR Modality Director role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: xr_modality_director

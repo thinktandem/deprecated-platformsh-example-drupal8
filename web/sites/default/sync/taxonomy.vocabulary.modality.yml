@@ -1,0 +1,9 @@
+uuid: 11f5bfce-b92d-4ea4-9303-db87f1e6c77a
+langcode: en
+status: true
+dependencies: {  }
+name: Modality
+vid: modality
+description: 'Imaging modality'
+hierarchy: 0
+weight: 0

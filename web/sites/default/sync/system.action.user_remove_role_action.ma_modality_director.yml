@@ -1,0 +1,14 @@
+uuid: f2e71cea-76a0-433d-b822-ac154f6c5f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ma_modality_director
+  module:
+    - user
+id: user_remove_role_action.ma_modality_director
+label: 'Remove the MA Modality Director role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ma_modality_director

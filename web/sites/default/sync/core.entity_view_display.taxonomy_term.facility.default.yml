@@ -1,0 +1,125 @@
+uuid: f87b84aa-5163-4d0d-b0c9-20780f444e6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.facility.field_area_code
+    - field.field.taxonomy_term.facility.field_city
+    - field.field.taxonomy_term.facility.field_d
+    - field.field.taxonomy_term.facility.field_main_ext
+    - field.field.taxonomy_term.facility.field_map_query
+    - field.field.taxonomy_term.facility.field_prefix
+    - field.field.taxonomy_term.facility.field_state
+    - field.field.taxonomy_term.facility.field_street_address
+    - field.field.taxonomy_term.facility.field_street_address_2
+    - field.field.taxonomy_term.facility.field_website
+    - field.field.taxonomy_term.facility.field_zip
+    - taxonomy.vocabulary.facility
+  module:
+    - link
+    - options
+    - text
+id: taxonomy_term.facility.default
+targetEntityType: taxonomy_term
+bundle: facility
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_area_code:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_city:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_d:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_main_ext:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_map_query:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_prefix:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_state:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_street_address:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_street_address_2:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_website:
+    weight: 11
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_zip:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

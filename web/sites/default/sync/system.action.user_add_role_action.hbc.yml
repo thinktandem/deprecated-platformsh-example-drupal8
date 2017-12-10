@@ -1,0 +1,14 @@
+uuid: e13639e6-eaf8-40fa-9976-1954810de54a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hbc
+  module:
+    - user
+id: user_add_role_action.hbc
+label: 'Add the HBC role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hbc

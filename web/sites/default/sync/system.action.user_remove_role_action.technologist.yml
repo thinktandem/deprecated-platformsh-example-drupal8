@@ -1,0 +1,14 @@
+uuid: 3274d5e6-9aa3-44b6-be37-8874bd243408
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.technologist
+  module:
+    - user
+id: user_remove_role_action.technologist
+label: 'Remove the Technologist role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: technologist

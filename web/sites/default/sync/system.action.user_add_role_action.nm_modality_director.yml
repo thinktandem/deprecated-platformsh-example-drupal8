@@ -1,0 +1,14 @@
+uuid: d477e02a-0eb4-4e32-bdce-44e330ca1e0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nm_modality_director
+  module:
+    - user
+id: user_add_role_action.nm_modality_director
+label: 'Add the NM Modality Director role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: nm_modality_director

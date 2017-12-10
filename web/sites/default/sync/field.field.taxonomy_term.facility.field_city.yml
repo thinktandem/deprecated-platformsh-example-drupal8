@@ -1,0 +1,19 @@
+uuid: 17a30333-3b86-4261-a751-bf3ba1c95842
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_city
+    - taxonomy.vocabulary.facility
+id: taxonomy_term.facility.field_city
+field_name: field_city
+entity_type: taxonomy_term
+bundle: facility
+label: City
+description: City
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

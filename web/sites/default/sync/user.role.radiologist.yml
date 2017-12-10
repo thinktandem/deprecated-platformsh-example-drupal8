@@ -1,0 +1,9 @@
+uuid: 33a58fc7-747f-4260-9d49-3d4b7fdbbd41
+langcode: en
+status: true
+dependencies: {  }
+id: radiologist
+label: Radiologist
+weight: -7
+is_admin: null
+permissions: {  }

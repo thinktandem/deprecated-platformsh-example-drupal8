@@ -1,0 +1,14 @@
+uuid: c479e986-5f22-4e49-adcf-7921cf654943
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ct_modality_director
+  module:
+    - user
+id: user_add_role_action.ct_modality_director
+label: 'Add the CT Modality Director role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ct_modality_director

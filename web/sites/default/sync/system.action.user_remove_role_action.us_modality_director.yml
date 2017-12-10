@@ -1,0 +1,14 @@
+uuid: ee5b0303-c404-4265-b6ee-a9ad4fae6fd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.us_modality_director
+  module:
+    - user
+id: user_remove_role_action.us_modality_director
+label: 'Remove the US Modality Director role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: us_modality_director

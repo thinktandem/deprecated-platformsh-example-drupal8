@@ -1,0 +1,9 @@
+uuid: 948feea3-fe82-4d25-9e68-200dd23ba508
+langcode: en
+status: true
+dependencies: {  }
+id: ma_modality_director
+label: 'MA Modality Director'
+weight: -2
+is_admin: null
+permissions: {  }
