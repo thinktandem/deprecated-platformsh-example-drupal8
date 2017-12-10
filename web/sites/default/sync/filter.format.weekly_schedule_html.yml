@@ -1,0 +1,14 @@
+uuid: 3d1ad84d-0d09-4662-846c-fbf073c2b655
+langcode: en
+status: true
+dependencies: {  }
+name: 'Weekly Schedule HTML'
+format: weekly_schedule_html
+weight: 0
+filters:
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }

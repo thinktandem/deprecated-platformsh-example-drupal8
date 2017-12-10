@@ -1,0 +1,24 @@
+uuid: 9caf3a71-b6cc-4cf7-8165-3b287e329722
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.weekly_schedule
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.weekly_schedule.teaser
+targetEntityType: node
+bundle: weekly_schedule
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: 5c7f9fe4-1d7b-493a-987c-c304757ee124
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Weekly Schedule'
+type: weekly_schedule
+description: "Weekly schedule\r\n"
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

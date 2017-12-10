@@ -1,0 +1,44 @@
+uuid: 213576a6-23af-4673-965b-1376b6725545
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.weekly_schedule_html
+  module:
+    - ckeditor
+format: weekly_schedule_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: false
+  scheme: private
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

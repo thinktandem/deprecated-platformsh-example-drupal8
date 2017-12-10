@@ -1,0 +1,17 @@
+uuid: 91ff7f92-4cfc-417e-bdf2-360f887fb37c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Weekly Schedule Change'
+type: weekly_schedule_change
+description: 'Weekly schedule change'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

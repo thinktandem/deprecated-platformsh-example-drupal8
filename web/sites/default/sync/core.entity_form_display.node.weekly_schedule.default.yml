@@ -1,0 +1,90 @@
+uuid: 84e7a87f-7501-48ea-a105-d8d3c5f3364d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.weekly_schedule.field_access
+    - field.field.node.weekly_schedule.field_weekly_dates
+    - field.field.node.weekly_schedule.field_weekly_files
+    - field.field.node.weekly_schedule.field_weekly_html_body
+    - field.field.node.weekly_schedule.field_weekly_revision
+    - field.field.node.weekly_schedule.field_weekly_schedule_name
+    - node.type.weekly_schedule
+  module:
+    - datetime
+    - field_layout
+    - file
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.weekly_schedule.default
+targetEntityType: node
+bundle: weekly_schedule
+mode: default
+content:
+  field_access:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_weekly_dates:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_weekly_files:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_weekly_html_body:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_weekly_revision:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_weekly_schedule_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 1
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

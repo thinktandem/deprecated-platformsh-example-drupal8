@@ -1,0 +1,19 @@
+uuid: 668172c8-6be5-4387-86ba-c438b1fc9ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_schedule_change_desc
+    - node.type.weekly_schedule_change
+id: node.weekly_schedule_change.field_schedule_change_desc
+field_name: field_schedule_change_desc
+entity_type: node
+bundle: weekly_schedule_change
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

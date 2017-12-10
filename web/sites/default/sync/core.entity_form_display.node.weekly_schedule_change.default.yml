@@ -1,0 +1,51 @@
+uuid: b7a32f3e-99ff-473a-99ad-2075e1ca88a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.weekly_schedule_change.field_access
+    - field.field.node.weekly_schedule_change.field_schedule_change_date
+    - field.field.node.weekly_schedule_change.field_schedule_change_desc
+    - node.type.weekly_schedule_change
+  module:
+    - datetime
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.weekly_schedule_change.default
+targetEntityType: node
+bundle: weekly_schedule_change
+mode: default
+content:
+  field_schedule_change_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_schedule_change_desc:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_access: true
+  path: true
+  promote: true
+  sticky: true
+  title: true
+  uid: true

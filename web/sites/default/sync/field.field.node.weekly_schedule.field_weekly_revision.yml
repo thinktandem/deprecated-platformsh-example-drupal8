@@ -1,0 +1,25 @@
+uuid: fe84939e-a52f-4502-958f-f8aa5458f2d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weekly_revision
+    - node.type.weekly_schedule
+id: node.weekly_schedule.field_weekly_revision
+field_name: field_weekly_revision
+entity_type: node
+bundle: weekly_schedule
+label: Revision
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

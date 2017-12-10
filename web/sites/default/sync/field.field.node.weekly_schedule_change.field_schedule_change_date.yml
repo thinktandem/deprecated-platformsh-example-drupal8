@@ -1,0 +1,21 @@
+uuid: aed20fd1-37c6-4ab8-8c6a-c7decfc26b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_schedule_change_date
+    - node.type.weekly_schedule_change
+  module:
+    - datetime
+id: node.weekly_schedule_change.field_schedule_change_date
+field_name: field_schedule_change_date
+entity_type: node
+bundle: weekly_schedule_change
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

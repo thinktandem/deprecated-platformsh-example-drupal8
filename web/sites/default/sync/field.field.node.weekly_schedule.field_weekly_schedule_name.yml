@@ -1,0 +1,19 @@
+uuid: 4316837c-20ed-4f52-ac2f-a97674563851
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weekly_schedule_name
+    - node.type.weekly_schedule
+id: node.weekly_schedule.field_weekly_schedule_name
+field_name: field_weekly_schedule_name
+entity_type: node
+bundle: weekly_schedule
+label: 'Schedule Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

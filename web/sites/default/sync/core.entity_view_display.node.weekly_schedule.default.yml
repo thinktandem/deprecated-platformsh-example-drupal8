@@ -1,0 +1,80 @@
+uuid: 9ab2d559-8726-40a6-8426-33be12af980f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.weekly_schedule.field_access
+    - field.field.node.weekly_schedule.field_weekly_dates
+    - field.field.node.weekly_schedule.field_weekly_files
+    - field.field.node.weekly_schedule.field_weekly_html_body
+    - field.field.node.weekly_schedule.field_weekly_revision
+    - field.field.node.weekly_schedule.field_weekly_schedule_name
+    - node.type.weekly_schedule
+  module:
+    - datetime
+    - field_layout
+    - file
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.weekly_schedule.default
+targetEntityType: node
+bundle: weekly_schedule
+mode: default
+content:
+  field_access:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_weekly_dates:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_weekly_files:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_weekly_html_body:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_weekly_revision:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_weekly_schedule_name:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

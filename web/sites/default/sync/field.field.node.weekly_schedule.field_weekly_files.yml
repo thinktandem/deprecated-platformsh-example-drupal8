@@ -1,0 +1,27 @@
+uuid: 7705c8bd-f455-433a-8444-71786ffadbeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weekly_files
+    - node.type.weekly_schedule
+  module:
+    - file
+id: node.weekly_schedule.field_weekly_files
+field_name: field_weekly_files
+entity_type: node
+bundle: weekly_schedule
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: weekly
+  file_extensions: 'txt pdf doc docx xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

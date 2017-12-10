@@ -1,0 +1,22 @@
+uuid: 4c63d292-c803-4f38-a000-a62a33f790e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.weekly_schedule_change
+id: node.weekly_schedule_change.promote
+field_name: promote
+entity_type: node
+bundle: weekly_schedule_change
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
