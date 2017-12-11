@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c415fae7100d160167075a185cb35c2c",
+    "content-hash": "af997bb805a7dcb31f60a18ef8a22e11",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2237,6 +2237,53 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/custom_formatters",
+            "version": "3.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/custom_formatters",
+                "reference": "8.x-3.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/custom_formatters-8.x-3.0-alpha1.zip",
+                "reference": "8.x-3.0-alpha1",
+                "shasum": "32aabc54d18056c91520f5386da855e27655f57e"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-alpha1",
+                    "datestamp": "1476912839",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Deciphered",
+                    "homepage": "https://www.drupal.org/user/103796"
+                }
+            ],
+            "description": "Allows users to easily define custom Field Formatters.",
+            "homepage": "https://www.drupal.org/project/custom_formatters",
+            "support": {
+                "source": "http://cgit.drupalcode.org/custom_formatters"
             }
         },
         {
@@ -8665,6 +8712,7 @@
         "drupal/page_manager": 10,
         "drupal/subpathauto": 10,
         "drupal/conditional_fields": 15,
+        "drupal/custom_formatters": 15,
         "drupal/coder": 20
     },
     "prefer-stable": true,
