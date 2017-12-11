@@ -1,0 +1,14 @@
+uuid: d1f7c33f-ec17-4e91-a85e-35ad1b604baa
+langcode: en
+status: true
+dependencies: {  }
+third_party_settings:
+  contextual:
+    mode: '1'
+id: embedded_pdf
+label: 'Embedded PDF'
+type: html_token
+description: 'Embeds a pdf file in an iframe.'
+field_types:
+  - file
+data: "<a href=\"[node:field_embed_pdf]\"><em>Download as PDF</em></a>\r\n<div class=\"scroll-wrapper\" style=\"-webkit-overflow-scrolling: touch; overflow-y: scroll;\">\r\n<iframe src=\"[node:field_embed_pdf]#toolbar=1&view=FitH\" style=\"width: 100%; height: 80vh;\">\r\n</iframe>\r\n</div>"

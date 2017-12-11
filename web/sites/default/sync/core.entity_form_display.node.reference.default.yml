@@ -20,10 +20,10 @@ dependencies:
     - allowed_formats
     - field_layout
     - file
+    - image
     - layout_discovery
     - link
     - path
-    - plupload_widget
     - text
 third_party_settings:
   field_layout:
@@ -76,7 +76,7 @@ content:
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: plupload_file_widget
+    type: file_generic
     region: content
   field_ref_images:
     weight: 15
@@ -84,7 +84,7 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: plupload_image_widget
+    type: image_image
     region: content
   field_ref_links:
     weight: 13

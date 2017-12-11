@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - custom_formatters.formatter.embedded_pdf
     - field.field.node.reference.field_access
     - field.field.node.reference.field_embed_pdf
     - field.field.node.reference.field_modality
@@ -16,6 +17,7 @@ dependencies:
     - field.field.node.reference.field_tags
     - node.type.reference
   module:
+    - custom_formatters
     - field_layout
     - file
     - image
@@ -46,7 +48,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: 'custom_formatters:embedded_pdf'
     region: content
   field_modality:
     weight: 103
@@ -125,4 +127,6 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
