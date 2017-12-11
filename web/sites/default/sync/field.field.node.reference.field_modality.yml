@@ -1,0 +1,29 @@
+uuid: f283090f-c9fe-4464-a2f7-47724e0a0eae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modality
+    - node.type.reference
+    - taxonomy.vocabulary.modality
+id: node.reference.field_modality
+field_name: field_modality
+entity_type: node
+bundle: reference
+label: Modality
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      modality: modality
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

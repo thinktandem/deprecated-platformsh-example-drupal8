@@ -1,0 +1,57 @@
+uuid: b52b2445-dd5e-4a83-ac3d-aa1d267ceffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.extended
+  module:
+    - ckeditor
+format: extended
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - '-'
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - HorizontalRule
+        -
+          name: Links
+          items:
+            - Table
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Media
+          items:
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: false
+  scheme: private
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

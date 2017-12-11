@@ -1,0 +1,30 @@
+uuid: 6c204051-862d-4a15-a632-23ae67dcc926
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_body
+    - node.type.reference
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    extended: extended
+    basic_html: '0'
+    restricted_html: '0'
+    weekly_schedule_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.reference.field_ref_body
+field_name: field_ref_body
+entity_type: node
+bundle: reference
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

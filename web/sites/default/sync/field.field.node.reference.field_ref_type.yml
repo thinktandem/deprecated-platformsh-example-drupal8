@@ -1,0 +1,23 @@
+uuid: 2df25b4e-1690-4157-99ea-59167a762b73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_type
+    - node.type.reference
+  module:
+    - options
+id: node.reference.field_ref_type
+field_name: field_ref_type
+entity_type: node
+bundle: reference
+label: 'Reference Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Clinical
+default_value_callback: ''
+settings: {  }
+field_type: list_string

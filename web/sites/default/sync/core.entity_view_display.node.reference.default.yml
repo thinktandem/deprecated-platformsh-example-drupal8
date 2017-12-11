@@ -1,0 +1,128 @@
+uuid: ce2e8cfb-5393-44ec-8090-df4cd520e2d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reference.field_access
+    - field.field.node.reference.field_embed_pdf
+    - field.field.node.reference.field_modality
+    - field.field.node.reference.field_ref_body
+    - field.field.node.reference.field_ref_files
+    - field.field.node.reference.field_ref_images
+    - field.field.node.reference.field_ref_links
+    - field.field.node.reference.field_ref_related_pages
+    - field.field.node.reference.field_ref_type
+    - field.field.node.reference.field_specialty
+    - field.field.node.reference.field_tags
+    - node.type.reference
+  module:
+    - field_layout
+    - file
+    - image
+    - layout_discovery
+    - link
+    - options
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.reference.default
+targetEntityType: node
+bundle: reference
+mode: default
+content:
+  field_access:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_embed_pdf:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_modality:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ref_body:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ref_files:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_ref_images:
+    weight: 111
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ref_links:
+    weight: 109
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_ref_related_pages:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ref_type:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_specialty:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tags:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

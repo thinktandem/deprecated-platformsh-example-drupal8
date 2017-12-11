@@ -1,0 +1,27 @@
+uuid: 3e568f40-3f66-401b-85a0-153718917549
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_files
+    - node.type.reference
+  module:
+    - file
+id: node.reference.field_ref_files
+field_name: field_ref_files
+entity_type: node
+bundle: reference
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ref/files
+  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx png jpg jpeg gif bmp'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

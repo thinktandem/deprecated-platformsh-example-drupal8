@@ -1,0 +1,23 @@
+uuid: 28648765-0214-40b9-b9bb-feeb032da061
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ref_links
+    - node.type.reference
+  module:
+    - link
+id: node.reference.field_ref_links
+field_name: field_ref_links
+entity_type: node
+bundle: reference
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

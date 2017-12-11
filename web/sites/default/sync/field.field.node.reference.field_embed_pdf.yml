@@ -1,0 +1,27 @@
+uuid: 48edf039-9498-46b5-928a-870ab0845212
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embed_pdf
+    - node.type.reference
+  module:
+    - file
+id: node.reference.field_embed_pdf
+field_name: field_embed_pdf
+entity_type: node
+bundle: reference
+label: 'Embedded PDF'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ref/embed
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
