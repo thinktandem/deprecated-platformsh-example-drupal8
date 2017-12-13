@@ -1,10 +1,12 @@
 uuid: d1f7c33f-ec17-4e91-a85e-35ad1b604baa
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - file
 third_party_settings:
   contextual:
-    mode: '1'
+    mode: '0'
 id: embedded_pdf
 label: 'Embedded PDF'
 type: html_token
