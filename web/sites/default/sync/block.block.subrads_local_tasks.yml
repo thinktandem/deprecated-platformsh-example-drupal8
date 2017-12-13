@@ -1,0 +1,22 @@
+uuid: 9bcfbda2-7f1b-4870-8c33-7120cecdcc07
+langcode: en
+status: true
+dependencies:
+  theme:
+    - subrads
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: subrads_local_tasks
+theme: subrads
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 7b5a9c4c-dff1-4318-95c7-d88132ce1dd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subrads
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: subrads_messages
+theme: subrads
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

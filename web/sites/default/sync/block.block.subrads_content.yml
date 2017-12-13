@@ -1,0 +1,22 @@
+uuid: ad90b0a2-ac9e-46ea-90b6-15fe6ec34a69
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subrads
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: subrads_content
+theme: subrads
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

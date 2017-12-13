@@ -1,0 +1,25 @@
+uuid: 661915de-c540-4f96-bef6-0a6255bd3cd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subrads
+_core:
+  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
+id: subrads_branding
+theme: subrads
+region: navigation
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

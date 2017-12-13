@@ -1,0 +1,22 @@
+uuid: c5bbc1eb-e285-4041-946c-6a1edbe417c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - subrads
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: subrads_help
+theme: subrads
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

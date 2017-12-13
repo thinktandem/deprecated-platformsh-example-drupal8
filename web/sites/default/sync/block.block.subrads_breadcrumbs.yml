@@ -1,0 +1,22 @@
+uuid: d4ba694a-ac4d-4bad-93b2-cb559155c93e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subrads
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: subrads_breadcrumbs
+theme: subrads
+region: header
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

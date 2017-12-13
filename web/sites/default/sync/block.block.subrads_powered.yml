@@ -1,0 +1,22 @@
+uuid: e265d92b-e552-46ab-b5eb-45bfe5e17510
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subrads
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: subrads_powered
+theme: subrads
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
