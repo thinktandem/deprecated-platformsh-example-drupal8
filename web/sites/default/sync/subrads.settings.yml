@@ -4,8 +4,11 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://localhost:32770/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://localhost:32770/themes/custom/subrads/favicon.ico'
   use_default: true
+table_responsive: '-1'
+table: ''
+cdn_jsdelivr_theme: bootstrap
 features:
   comment_user_picture: true
   comment_user_verification: true

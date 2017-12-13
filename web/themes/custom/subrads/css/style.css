@@ -1,3 +1,164 @@
 /**
- * Place your custom styles here.
+ * Subrads theme custom css, to override bootstrap base css
+ * 
  */
+
+
+
+/** Page level
+ *
+ */
+
+
+/* remove excess white space above page */
+body {
+  margin-top: 0;
+}
+
+/* header section */
+.header-wrapper {
+  background-color: #222;
+}
+.navbar-default {
+  background-color: inherit;
+  border: none;
+}
+/*
+.navbar-default .navbar-nav > li > a {
+  color: #ddd;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #444;
+}
+.navbar-default .navbar-nav > .open > .dropdown-menu {
+  background-color: #222;
+}
+*/
+
+/**
+ * Change the appearance of the navigation menu text and dropdowns
+ */
+/*.navbar {
+  border: none;
+  border-radius: initial;
+}
+*/
+/* .navbar-default .navbar-nav {
+  position: relative;
+  bottom: -13px;
+}
+*/
+.dropdown-menu {
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar-default .navbar-nav > .open > .dropdown-menu {
+  background-color: #222;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > .dropdown-menu > li > a,
+.navbar-default .navbar-nav > .open > .dropdown-menu > .active > a {
+  font-size: 1.3em;
+  color: #ddd;
+  background-color: #222;
+}
+.navbar-default .navbar-nav > .open > .dropdown-menu > li > a,
+.navbar-default .navbar-nav > .open > .dropdown-menu > .active > a {
+  font-size: 1.2em;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > .dropdown-menu > li > a:hover, .navbar-default .navbar-nav > .open > .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav > .open > .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav > .open > .dropdown-menu > .active > a:focus {
+  color: #fff;
+  background-color: #333;
+}
+.navbar-default .navbar-nav > li > a > .caret,
+.navbar-default .navbar-nav > .open > a > .caret {
+  color: #ddd;
+  background-color: #222;
+  border-top-color: #ddd;
+  border-bottom-color: #ddd;
+}
+.navbar-default .navbar-nav > li > a:hover > .caret,
+.navbar-default .navbar-nav > li > a:focus > .caret,
+.navbar-default .navbar-nav > .open > a:hover > .caret,
+.navbar-default .navbar-nav > .open > a:focus > .caret {
+  color: #fff;
+  background-color: #333;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+/*
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > .open > .dropdown-menu > li > a,
+  .navbar-default .navbar-nav > .open > .dropdown-menu > .active > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+*/
+
+/* Move the droptown toggle arrows closer to the parent item */
+/*
+.navbar-default .navbar-nav > li.expanded > a {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.navbar-default .navbar-nav > li.expanded > a.dropdown-toggle {
+  padding-left: 5px;
+  padding-right: 15px;
+}
+*/
+
+
+/**
+ * Secondary navigation menu
+ */
+@media (min-width: 768px) {
+  .navbar-default nav {
+    position: relative;
+  }
+  .navbar-default .navbar-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navbar-default .navbar-right > li > a {
+    font-size: 0.9em;
+    color: #bbb;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+
+/**
+ * These modify the appearance and style of the mobile navbar toggle button
+ */
+.navbar-default .navbar-toggle {
+  margin-right: 10px;
+  padding: 8px;
+  border: none;
+  outline-color: #222;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  border: none;
+  background-color: #222;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  height: 3px;
+  border-radius: 0px;
+}
+
+
+
