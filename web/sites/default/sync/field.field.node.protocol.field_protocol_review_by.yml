@@ -1,0 +1,41 @@
+uuid: d2e5c445-74ec-4cae-a2e3-b681b8a75c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protocol_review_by
+    - node.type.protocol
+id: node.protocol.field_protocol_review_by
+field_name: field_protocol_review_by
+entity_type: node
+bundle: protocol
+label: 'Review By'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        radiologist: radiologist
+        administrator: '0'
+        hbc: '0'
+        technologist: '0'
+        staff: '0'
+        ct_modality_director: '0'
+        ma_modality_director: '0'
+        mr: '0'
+        nm_modality_director: '0'
+        us_modality_director: '0'
+        xr_modality_director: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

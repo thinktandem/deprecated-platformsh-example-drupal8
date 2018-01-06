@@ -1,0 +1,21 @@
+uuid: c539518e-1cc4-4042-b338-6e38884ee462
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_carrier
+  module:
+    - options
+    - user
+id: user.user.field_user_carrier
+field_name: field_user_carrier
+entity_type: user
+bundle: user
+label: Carrier
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

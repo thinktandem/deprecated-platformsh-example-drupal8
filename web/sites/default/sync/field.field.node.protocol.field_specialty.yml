@@ -1,0 +1,29 @@
+uuid: 8b173fc6-fe07-4122-b53e-b74996924c5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specialty
+    - node.type.protocol
+    - taxonomy.vocabulary.specialty
+id: node.protocol.field_specialty
+field_name: field_specialty
+entity_type: node
+bundle: protocol
+label: Specialty
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      specialty: specialty
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -21,4 +21,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_access: true
+  field_schedule_change_date: true
+  field_schedule_change_desc: true

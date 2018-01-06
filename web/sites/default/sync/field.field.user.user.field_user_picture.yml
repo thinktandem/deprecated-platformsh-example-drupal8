@@ -1,29 +1,29 @@
-uuid: 2892b840-a023-4dc8-87f5-5abc8283f627
+uuid: 996c4f01-6d27-4c81-a318-e8e3b491d55d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ref_images
-    - node.type.reference
+    - field.storage.user.field_user_picture
   module:
     - image
-id: node.reference.field_ref_images
-field_name: field_ref_images
-entity_type: node
-bundle: reference
-label: Images
+    - user
+id: user.user.field_user_picture
+field_name: field_user_picture
+entity_type: user
+bundle: user
+label: Picture
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: ref/images
+  file_directory: user/pictures
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 2048x4096
-  min_resolution: 64x64
-  alt_field: true
+  min_resolution: 256x256
+  alt_field: false
   alt_field_required: false
   title_field: false
   title_field_required: false

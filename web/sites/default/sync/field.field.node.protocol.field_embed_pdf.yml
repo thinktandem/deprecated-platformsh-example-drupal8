@@ -1,0 +1,27 @@
+uuid: 0419a6a5-d3f3-4e1b-9826-1a5c2f696d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embed_pdf
+    - node.type.protocol
+  module:
+    - file
+id: node.protocol.field_embed_pdf
+field_name: field_embed_pdf
+entity_type: node
+bundle: protocol
+label: 'Embedded PDF'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: protocols/embed
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

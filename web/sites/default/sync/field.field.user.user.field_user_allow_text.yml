@@ -1,0 +1,24 @@
+uuid: b1d6f32e-ee47-4c9b-ac7f-85e32ef097a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_allow_text
+  module:
+    - user
+id: user.user.field_user_allow_text
+field_name: field_user_allow_text
+entity_type: user
+bundle: user
+label: 'Allow Text Messaging'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,29 @@
+uuid: 818e6050-fe00-4538-9f35-42751fccc08b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modality
+    - node.type.protocol
+    - taxonomy.vocabulary.modality
+id: node.protocol.field_modality
+field_name: field_modality
+entity_type: node
+bundle: protocol
+label: Modality
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      modality: modality
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,16 +1,16 @@
-uuid: 2892b840-a023-4dc8-87f5-5abc8283f627
+uuid: 997e882b-e2cd-4503-9de7-4399c6d27593
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ref_images
-    - node.type.reference
+    - field.storage.node.field_protocol_images
+    - node.type.protocol
   module:
     - image
-id: node.reference.field_ref_images
-field_name: field_ref_images
+id: node.protocol.field_protocol_images
+field_name: field_protocol_images
 entity_type: node
-bundle: reference
+bundle: protocol
 label: Images
 description: ''
 required: false
@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: ref/images
+  file_directory: protocols/images
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 2048x4096

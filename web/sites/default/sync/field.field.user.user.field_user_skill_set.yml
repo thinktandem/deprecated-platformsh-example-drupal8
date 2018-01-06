@@ -1,0 +1,30 @@
+uuid: 9b29952a-d131-441d-983e-6fad6eb4b3f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_skill_set
+    - taxonomy.vocabulary.skill_set
+  module:
+    - user
+id: user.user.field_user_skill_set
+field_name: field_user_skill_set
+entity_type: user
+bundle: user
+label: 'Skill Set'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      skill_set: skill_set
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

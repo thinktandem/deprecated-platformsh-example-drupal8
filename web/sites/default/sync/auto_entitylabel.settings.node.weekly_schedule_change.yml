@@ -1,5 +1,5 @@
 status: '1'
-pattern: '[node:field_schedule_change_date] ([current-date:short])'
+pattern: '[node:field_schedule_change_date:date:custom:Y-m-d] ([current-date:custom:Y-m-d H:i])'
 php: 0
 escape: 0
 dependencies:

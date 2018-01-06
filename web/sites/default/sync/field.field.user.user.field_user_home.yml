@@ -1,0 +1,21 @@
+uuid: 3d69b493-f8da-4053-bbcb-df00bea28129
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_home
+  module:
+    - telephone
+    - user
+id: user.user.field_user_home
+field_name: field_user_home
+entity_type: user
+bundle: user
+label: 'Home Phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

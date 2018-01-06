@@ -1,10 +1,10 @@
-uuid: 9caf3a71-b6cc-4cf7-8165-3b287e329722
+uuid: 0f419c92-b14e-460c-8695-b752bef15698
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.weekly_schedule
+    - node.type.protocol
   module:
     - field_layout
     - layout_discovery
@@ -13,18 +13,12 @@ third_party_settings:
   field_layout:
     id: layout_onecol
     settings: {  }
-id: node.weekly_schedule.teaser
+id: node.protocol.teaser
 targetEntityType: node
-bundle: weekly_schedule
+bundle: protocol
 mode: teaser
 content:
   links:
     weight: 100
     region: content
-hidden:
-  field_access: true
-  field_weekly_dates: true
-  field_weekly_files: true
-  field_weekly_html_body: true
-  field_weekly_revision: true
-  field_weekly_schedule_name: true
+hidden: {  }

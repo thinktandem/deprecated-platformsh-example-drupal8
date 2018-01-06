@@ -12,6 +12,6 @@ name: 'Weekly Schedule Change'
 type: weekly_schedule_change
 description: 'Weekly schedule change'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 0
 display_submitted: false

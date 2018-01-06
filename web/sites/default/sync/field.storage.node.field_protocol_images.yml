@@ -1,21 +1,23 @@
-uuid: 09f231f9-ff3c-4b8b-a655-54165e45b0a1
+uuid: abb98dbf-225a-4452-bcd9-59414a87c0b2
 langcode: en
 status: true
 dependencies:
   module:
+    - field_permissions
     - file
     - image
-    - user
-_core:
-  default_config_hash: 6k-VBFilDLuzgSOT-77CFgHFlcd5D-kqRixtH89EShU
-id: user.user_picture
-field_name: user_picture
-entity_type: user
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_protocol_images
+field_name: field_protocol_images
+entity_type: node
 type: image
 settings:
-  uri_scheme: public
+  uri_scheme: private
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
@@ -25,10 +27,8 @@ settings:
   display_default: false
 module: image
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
-indexes:
-  target_id:
-    - target_id
+indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

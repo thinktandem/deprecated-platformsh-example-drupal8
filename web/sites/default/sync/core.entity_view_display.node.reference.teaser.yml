@@ -21,4 +21,15 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_access: true
+  field_embed_pdf: true
+  field_modality: true
+  field_ref_body: true
+  field_ref_files: true
+  field_ref_images: true
+  field_ref_links: true
+  field_ref_related_pages: true
+  field_ref_type: true
+  field_specialty: true
+  field_tags: true

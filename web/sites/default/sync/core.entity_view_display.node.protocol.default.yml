@@ -1,0 +1,130 @@
+uuid: 9182aa77-5e16-4410-92dd-d06e69b29bdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.protocol.field_access
+    - field.field.node.protocol.field_embed_pdf
+    - field.field.node.protocol.field_modality
+    - field.field.node.protocol.field_protocol_body
+    - field.field.node.protocol.field_protocol_files
+    - field.field.node.protocol.field_protocol_images
+    - field.field.node.protocol.field_protocol_links
+    - field.field.node.protocol.field_protocol_review_by
+    - field.field.node.protocol.field_protocol_review_date
+    - field.field.node.protocol.field_specialty
+    - field.field.node.protocol.field_tags
+    - node.type.protocol
+  module:
+    - datetime
+    - field_layout
+    - file
+    - image
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.protocol.default
+targetEntityType: node
+bundle: protocol
+mode: default
+content:
+  field_access:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_embed_pdf:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_modality:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_protocol_body:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_protocol_files:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_protocol_images:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_protocol_links:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_protocol_review_by:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_protocol_review_date:
+    weight: 110
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_specialty:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tags:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

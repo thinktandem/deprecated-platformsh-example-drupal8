@@ -1,0 +1,27 @@
+uuid: 5570cf4a-5913-48c6-ab9c-aa0080ed86c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protocol_files
+    - node.type.protocol
+  module:
+    - file
+id: node.protocol.field_protocol_files
+field_name: field_protocol_files
+entity_type: node
+bundle: protocol
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: protocols/files
+  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx png jpg jpeg gif bmp'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,60 @@
+uuid: 45ad7837-23c1-46e5-8b27-a2abe75bfeb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_user_carrier
+field_name: field_user_carrier
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '@txt.att.net'
+      label: 'AT&T'
+    -
+      value: '@vtext.com'
+      label: Verizon
+    -
+      value: '@tmomail.net'
+      label: T-Mobile
+    -
+      value: '@pm.sprint.com'
+      label: Sprint
+    -
+      value: '@message.alltel.com'
+      label: Alltel
+    -
+      value: '@myboostmobile.com'
+      label: 'Boost Mobile'
+    -
+      value: '@sms.mycricket.com'
+      label: Cricket
+    -
+      value: '@mymetropcs.com'
+      label: 'Metro PCS'
+    -
+      value: '@messaging.nextel.com'
+      label: Nextel
+    -
+      value: '@qwestmp.com'
+      label: Qwest
+    -
+      value: '@mmst5.tracfone.com'
+      label: Tracfone
+    -
+      value: '@email.uscc.net'
+      label: 'US Cellular'
+    -
+      value: '@vmobl.com'
+      label: 'Virgin Mobile'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

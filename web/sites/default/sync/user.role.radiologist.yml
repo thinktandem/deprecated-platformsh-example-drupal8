@@ -6,4 +6,12 @@ id: radiologist
 label: Radiologist
 weight: -7
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create field_user_address'
+  - 'create field_user_radpeer'
+  - 'edit own field_user_address'
+  - 'edit own field_user_radpeer'
+  - 'view field_user_address'
+  - 'view field_user_radpeer'
+  - 'view own field_user_address'
+  - 'view own field_user_radpeer'

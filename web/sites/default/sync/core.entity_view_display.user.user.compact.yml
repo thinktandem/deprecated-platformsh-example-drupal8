@@ -4,11 +4,20 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - field.field.user.user.field_user_address
+    - field.field.user.user.field_user_allow_text
+    - field.field.user.user.field_user_carrier
+    - field.field.user.user.field_user_first
+    - field.field.user.user.field_user_home
+    - field.field.user.user.field_user_last
+    - field.field.user.user.field_user_mobile
+    - field.field.user.user.field_user_office
+    - field.field.user.user.field_user_pager
+    - field.field.user.user.field_user_radpeer
+    - field.field.user.user.field_user_salutation
+    - field.field.user.user.field_user_skill_set
   module:
     - field_layout
-    - image
     - layout_discovery
     - user
 third_party_settings:
@@ -21,15 +30,18 @@ id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
-content:
-  user_picture:
-    type: image
-    weight: 0
-    region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
+content: {  }
 hidden:
+  field_user_address: true
+  field_user_allow_text: true
+  field_user_carrier: true
+  field_user_first: true
+  field_user_home: true
+  field_user_last: true
+  field_user_mobile: true
+  field_user_office: true
+  field_user_pager: true
+  field_user_radpeer: true
+  field_user_salutation: true
+  field_user_skill_set: true
   member_for: true
