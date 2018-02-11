@@ -37,6 +37,7 @@ module:
   file: 0
   filter: 0
   flag: 0
+  form_mode_control: 0
   help: 0
   history: 0
   image: 0

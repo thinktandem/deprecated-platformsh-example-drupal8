@@ -24,10 +24,11 @@ dependencies:
     - layout_discovery
     - link
     - path
+    - plupload_widget
     - text
 third_party_settings:
   field_layout:
-    id: layout_onecol
+    id: layout_twocol_bricks
     settings: {  }
 id: node.reference.default
 targetEntityType: node
@@ -36,32 +37,47 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 2
-    region: content
+    weight: 14
+    region: second_below
     settings: {  }
     third_party_settings: {  }
   field_access:
-    weight: 5
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
-    region: content
+    region: first_above
   field_embed_pdf:
-    weight: 11
+    weight: 8
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    region: content
+    region: middle
   field_modality:
-    weight: 7
+    weight: 3
     settings: {  }
     third_party_settings:
-      conditional_fields: {  }
+      conditional_fields:
+        444845d7-4316-4f05-982c-57d8279f5eac:
+          dependee: field_ref_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: reference
     type: options_buttons
-    region: content
+    region: first_above
   field_ref_body:
-    weight: 10
+    weight: 7
     settings:
       rows: 10
       placeholder: ''
@@ -70,89 +86,89 @@ content:
         hide_help: '1'
         hide_guidelines: '1'
     type: text_textarea
-    region: content
+    region: middle
   field_ref_files:
-    weight: 12
+    weight: 9
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
+    type: plupload_file_widget
+    region: first_below
   field_ref_images:
-    weight: 15
+    weight: 10
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    region: content
+    region: first_below
   field_ref_links:
-    weight: 13
+    weight: 11
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
-    region: content
+    region: first_below
   field_ref_related_pages:
-    weight: 14
+    weight: 12
     settings:
       match_operator: CONTAINS
       size: 20
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
+    region: first_below
   field_ref_type:
-    weight: 6
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
+    region: first_above
   field_specialty:
-    weight: 8
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
-    region: content
+    region: first_above
   field_tags:
-    weight: 9
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 20
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
-    region: content
+    region: first_above
   path:
     type: path
-    weight: 3
-    region: content
+    weight: 15
+    region: bottom
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
-    region: content
+    weight: 6
+    region: second_above
     third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
-    region: content
+    region: top
     settings:
       size: 20
       placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 13
     settings:
       match_operator: CONTAINS
-      size: 20
+      size: 60
       placeholder: ''
-    region: content
+    region: second_below
     third_party_settings: {  }
 hidden:
   promote: true

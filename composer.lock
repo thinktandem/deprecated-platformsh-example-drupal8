@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "af997bb805a7dcb31f60a18ef8a22e11",
+    "content-hash": "04e85427b1199ac36adcac08688cf4f2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2681,6 +2681,65 @@
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
                 "source": "http://cgit.drupalcode.org/flag"
+            }
+        },
+        {
+            "name": "drupal/form_mode_control",
+            "version": "2.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/form_mode_control",
+                "reference": "8.x-2.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/form_mode_control-8.x-2.0-rc2.zip",
+                "reference": "8.x-2.0-rc2",
+                "shasum": "e9318600a20ae543be061fcbb59f2405ef6d109c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-rc2",
+                    "datestamp": "1483541943",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Idriss.BS",
+                    "homepage": "https://www.drupal.org/user/3156165"
+                },
+                {
+                    "name": "eme",
+                    "homepage": "https://www.drupal.org/user/542492"
+                },
+                {
+                    "name": "matio89",
+                    "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "mh.marouan",
+                    "homepage": "https://www.drupal.org/user/3203501"
+                }
+            ],
+            "description": "Allow you to use the form modes per role and per bundle / Entity.",
+            "homepage": "https://www.drupal.org/project/form_mode_control",
+            "support": {
+                "source": "http://cgit.drupalcode.org/form_mode_control"
             }
         },
         {
@@ -8713,6 +8772,7 @@
         "drupal/subpathauto": 10,
         "drupal/conditional_fields": 15,
         "drupal/custom_formatters": 15,
+        "drupal/form_mode_control": 5,
         "drupal/coder": 20
     },
     "prefer-stable": true,

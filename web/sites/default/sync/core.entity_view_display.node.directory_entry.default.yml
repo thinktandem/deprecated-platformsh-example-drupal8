@@ -14,6 +14,7 @@ dependencies:
   module:
     - field_layout
     - layout_discovery
+    - telephone
     - user
 third_party_settings:
   field_layout:
@@ -25,23 +26,23 @@ bundle: directory_entry
 mode: default
 content:
   field_access:
-    weight: 101
+    weight: 5
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: first
+    region: second
   field_dir_department:
-    weight: 103
+    weight: 6
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: first
+    region: second
   field_dir_extension:
-    weight: 107
+    weight: 2
     label: above
     settings:
       link_to_entity: false
@@ -49,7 +50,7 @@ content:
     type: string
     region: first
   field_dir_name:
-    weight: 104
+    weight: 1
     label: above
     settings:
       link_to_entity: false
@@ -57,31 +58,31 @@ content:
     type: string
     region: first
   field_dir_note:
-    weight: 105
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: first
   field_dir_number:
-    weight: 106
+    weight: 3
     label: above
     settings:
-      link_to_entity: false
+      title: ''
     third_party_settings: {  }
-    type: string
+    type: telephone_link
     region: first
   field_facility:
-    weight: 102
+    weight: 7
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: first
+    region: second
   links:
-    weight: 100
-    region: first
+    weight: 0
+    region: top
     settings: {  }
     third_party_settings: {  }
 hidden: {  }

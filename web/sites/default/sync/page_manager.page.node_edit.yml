@@ -1,0 +1,12 @@
+uuid: 8b15527e-b644-41b7-aeeb-84703f0ea2fc
+langcode: en
+status: false
+dependencies: {  }
+id: node_edit
+label: 'Node edit'
+description: ''
+use_admin_theme: false
+path: '/node/{node}/edit'
+access_logic: and
+access_conditions: {  }
+parameters: {  }

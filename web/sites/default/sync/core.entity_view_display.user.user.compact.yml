@@ -41,6 +41,7 @@ hidden:
   field_user_mobile: true
   field_user_office: true
   field_user_pager: true
+  field_user_picture: true
   field_user_radpeer: true
   field_user_salutation: true
   field_user_skill_set: true

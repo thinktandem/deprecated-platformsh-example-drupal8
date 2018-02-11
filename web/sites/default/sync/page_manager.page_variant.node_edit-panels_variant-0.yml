@@ -1,0 +1,41 @@
+uuid: b67a51ec-f2fa-4ec8-8890-f51181b1078c
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_edit
+  module:
+    - panels
+id: node_edit-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks: {  }
+  id: panels_variant
+  uuid: d52ac0c7-771b-4fd8-b5fb-4de1ec1b632b
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: node_edit-panels_variant-0
+  builder: standard
+page: node_edit
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -74,7 +74,7 @@ content:
   field_dir_note:
     weight: 3
     settings:
-      rows: 3
+      rows: 1
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea

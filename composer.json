@@ -47,7 +47,8 @@
         "drupal/subpathauto": "^1.0@beta",
         "drupal/search_api": "^1.5",
         "drupal/conditional_fields": "^1.0@alpha",
-        "drupal/custom_formatters": "^3.0@alpha"
+        "drupal/custom_formatters": "^3.0@alpha",
+        "drupal/form_mode_control": "^2.0@RC"
     },
     "require-dev": {
         "behat/behat": "3.*",

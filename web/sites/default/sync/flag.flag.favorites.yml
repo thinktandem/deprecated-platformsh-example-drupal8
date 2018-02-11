@@ -1,0 +1,32 @@
+uuid: b009135d-4c82-49f1-acc4-6299754448eb
+langcode: en
+status: true
+dependencies: {  }
+id: favorites
+label: Favorites
+bundles:
+  - basic_page
+  - protocol
+  - reference
+  - weekly_schedule
+entity_type: node
+global: false
+weight: 0
+flag_short: '<span class="glyphicon glyphicon-star-empty"></span>'
+flag_long: 'Add to your favorites'
+flag_message: ''
+unflag_short: '<span class="glyphicon glyphicon-star"></span>'
+unflag_long: 'Favorited - click to remove from your favorites'
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

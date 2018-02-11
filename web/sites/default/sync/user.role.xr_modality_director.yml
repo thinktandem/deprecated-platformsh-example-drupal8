@@ -6,4 +6,11 @@ id: xr_modality_director
 label: 'XR Modality Director'
 weight: 2
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create protocol content'
+  - 'delete own protocol content'
+  - 'delete protocol revisions'
+  - 'edit any protocol content'
+  - 'edit own protocol content'
+  - 'revert protocol revisions'
+  - 'view protocol revisions'

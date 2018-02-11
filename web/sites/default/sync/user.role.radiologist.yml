@@ -7,10 +7,21 @@ label: Radiologist
 weight: -7
 is_admin: null
 permissions:
+  - 'create directory_entry content'
   - 'create field_user_address'
   - 'create field_user_radpeer'
+  - 'create reference content'
+  - 'create weekly_schedule_change content'
+  - 'delete own directory_entry content'
+  - 'delete own reference content'
+  - 'delete own weekly_schedule_change content'
+  - 'edit any directory_entry content'
+  - 'edit own directory_entry content'
   - 'edit own field_user_address'
   - 'edit own field_user_radpeer'
+  - 'edit own reference content'
+  - 'edit own weekly_schedule_change content'
+  - 'use  The form mode admin linked to  node entity( directory_entry )'
   - 'view field_user_address'
   - 'view field_user_radpeer'
   - 'view own field_user_address'
