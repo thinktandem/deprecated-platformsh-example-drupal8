@@ -13,4 +13,4 @@ type: html_token
 description: 'Embeds a pdf file in an iframe.'
 field_types:
   - file
-data: "<a href=\"[node:field_embed_pdf]\"><em>Download as PDF</em></a>\r\n<div class=\"scroll-wrapper\" style=\"-webkit-overflow-scrolling: touch; overflow-y: scroll;\">\r\n<iframe src=\"[node:field_embed_pdf]#toolbar=1&view=FitH\" style=\"width: 100%; height: 80vh;\">\r\n</iframe>\r\n</div>"
+data: "<a href=\"[node:field_embed_pdf]\"><em>Download as PDF</em></a>\r\n<div class=\"scroll-wrapper\" style=\"-webkit-overflow-scrolling: touch; overflow-y: scroll;\">\r\n<iframe src=\"[node:field_embed_pdf]\" style=\"width: 100%; height: 80vh;\">\r\n</iframe>\r\n<iframe src=\"[node:field_embed_pdf]#toolbar=1&view=FitH\" style=\"width: 100%; height: 80vh;\">\r\n</iframe>\r\n</div>"

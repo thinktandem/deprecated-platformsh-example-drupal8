@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.reference.field_modality
     - field.field.node.reference.field_ref_body
     - field.field.node.reference.field_ref_files
-    - field.field.node.reference.field_ref_images
     - field.field.node.reference.field_ref_links
     - field.field.node.reference.field_ref_related_pages
     - field.field.node.reference.field_ref_type
@@ -20,7 +19,6 @@ dependencies:
     - custom_formatters
     - field_layout
     - file
-    - image
     - layout_discovery
     - link
     - options
@@ -72,15 +70,6 @@ content:
     third_party_settings: {  }
     type: file_default
     region: content
-  field_ref_images:
-    weight: 111
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_ref_links:
     weight: 109
     label: above
@@ -123,6 +112,9 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  flag_favorites:
+    weight: 10
     region: content
   links:
     weight: 100

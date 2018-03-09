@@ -8,19 +8,16 @@ dependencies:
     - field.field.node.reference.field_modality
     - field.field.node.reference.field_ref_body
     - field.field.node.reference.field_ref_files
-    - field.field.node.reference.field_ref_images
     - field.field.node.reference.field_ref_links
     - field.field.node.reference.field_ref_related_pages
     - field.field.node.reference.field_ref_type
     - field.field.node.reference.field_specialty
     - field.field.node.reference.field_tags
-    - image.style.thumbnail
     - node.type.reference
   module:
     - allowed_formats
     - field_layout
     - file
-    - image
     - layout_discovery
     - link
     - path
@@ -93,14 +90,6 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: plupload_file_widget
-    region: first_below
-  field_ref_images:
-    weight: 10
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: first_below
   field_ref_links:
     weight: 11

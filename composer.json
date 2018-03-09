@@ -20,7 +20,7 @@
         "drupal-composer/drupal-scaffold": "^2.0.1",
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "~8.0",
-        "drush/drush": "~8",
+        "drush/drush": "^9.2",
         "drupal/console": "~1.0",
         "drupal/bootstrap": "^3.7",
         "drupal/bootstrap_layouts": "^5.0",
