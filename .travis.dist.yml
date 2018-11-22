@@ -36,23 +36,22 @@ script:
 
   # Do platform stuff
   # Verify we are logged in
-  #- lando platform auth:info
+  - lando platform auth:info
 
   # Generate and post an ssh key and then wait because Platform seems to
   # refresh keys every 90 seconds
   # NOTE: If you are getting consistent DB pull failures then you might want to increase the sleep
-  #- lando platform ssh-key:add -y
-  #- sleep 200
+  - lando platform ssh-key:add -y
+  - sleep 200
 
-  - lando drush si -y --db-url=mysql://drupal8:drupal8@database/drupal8
   # Dump and import the database
-  #- lando platform db:dump --gzip --file=dump.sql.gz --project=$PLATFORMSH_PROJECT_ID --environment=master --identity-file=/var/www/.ssh/id_rsa
-  #- lando db-import dump.sql.gz
-  #- rm -f dump.sql.gz
+  - lando platform db:dump --gzip --file=dump.sql.gz --project=$PLATFORMSH_PROJECT_ID --environment=master --identity-file=/var/www/.ssh/id_rsa
+  - lando db-import dump.sql.gz
+  - rm -f dump.sql.gz
 
   # This could be potentially problematic if someone adds their own ssh key after we generate one above
   # and before we run the below
-  #- lando ssh -c "/var/www/.platformsh/bin/platform ssh-key:delete \$(/var/www/.platformsh/bin/platform ssh-keys --format=csv | tail -1 | cut -d ',' -f 1)"
+  - lando ssh -c "/var/www/.platformsh/bin/platform ssh-key:delete \$(/var/www/.platformsh/bin/platform ssh-keys --format=csv | tail -1 | cut -d ',' -f 1)"
 
   # Check to see if we succeeded
   - cd web
