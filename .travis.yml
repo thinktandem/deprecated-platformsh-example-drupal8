@@ -27,11 +27,7 @@ script:
 
   # Run non-db required tests eg linting/code standards/unit tests
   # Lint the codez
-  - lando phplint
-
-  # Check code standards
-  # lando phpcs --config-set installed_paths /app/vendor/drupal/coder/coder_sniffer
-  # lando phpcs -n --report=full --standard=Drupal --ignore=*.tpl.php --extensions=install,module,php,inc web/modules web/themes web/profiles
+  - lando composer lint
 
   # Unit tests
   # cd web
