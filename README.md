@@ -1,5 +1,5 @@
-Killer Drupal 8 Workflow for Platform.sh
-========================================
+Killer Drupal 8 Workflow for Platform.sh!
+=========================================
 
 **THIS PROJECT IS DEPRECATED IN FAVOR OF**
 https://github.com/thinktandem/template-drupal8
